@@ -1,0 +1,100 @@
+/* phu tro */
+:root {
+  --mau-chinh: #0000ff;
+  --mau-sang: #a2a2a2;
+  --mau-so: #cc7fff;
+}
+.nen-sang {
+  background-color: #fff;
+  padding: 0 0.5rem;
+}
+.solid {
+  border-bottom: 1px solid var(--mau-sang);
+}
+.dashed {
+  border-bottom: 1px dashed #7facff;
+}
+.hidden {
+  display: none;
+}
+/* Tieu de */
+body h1 {
+  padding: 2rem 0;
+  text-align: center;
+}
+/* Layout */
+body .container {
+  background-color: var(--mau-chinh);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 1.2rem;
+  gap: 1rem;
+}
+
+.Team {
+  grid-area: 1/2/2/3;
+}
+.Scopes {
+  grid-area: 2/1/3/2;
+}
+.Timeline {
+  grid-area: 1/3/3/-1;
+}
+/* noi dung */
+.container h2 {
+  color: var(--mau-chinh);
+  border-bottom: solid 2px var(--mau-sang);
+  padding: 2rem 0;
+  margin: 0 0.5rem;
+}
+.Timeline .danh-so {
+  font-size: 30px;
+  background-color: var(--mau-so);
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  border: solid 2px var(--mau-sang);
+}
+
+.Goals-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 0.4rem;
+}
+.Team-item {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 0.4rem;
+  gap: 0.4rem;
+}
+.Goals-item > *:last-child,
+.Team-item > *:last-child {
+  justify-self: start;
+}
+/* may tinh bang  */
+@media (max-width: 992px) {
+  body .container,
+  .Goals-item,
+  .Team-item {
+    display: flex;
+    flex-direction: column;
+  }
+  body .container {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  .Goals-item > *:last-child,
+  .Team-item > *:last-child {
+    align-self: flex-start;
+    padding-left: 1rem;
+    width: 100%;
+  }
+  .danh-so {
+    align-self: flex-start;
+    margin-left: 1rem;
+  }
+}

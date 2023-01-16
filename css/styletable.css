@@ -1,0 +1,83 @@
+@media (max-width: 992px) {
+  /* Nav-bar */
+  .avatar {
+    display: none;
+  }
+  .ten-chinh {
+    padding: 20px;
+  }
+  .thong-tin {
+    border-left: solid #e3e1e1 2px;
+    border-right: solid #e3e1e1 2px;
+    border-collapse: collapse;
+    font-size: small;
+  }
+  /* About */
+  #about h1,
+  .job-info h1 {
+    font-size: x-large;
+  }
+  #about a,
+  #about p,
+  .job-info p {
+    font-size: medium;
+  }
+  #target {
+    padding: 40px;
+  }
+  /* bang thanh phan */
+  .a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+  }
+  .b {
+    display: flex;
+    flex-direction: column;
+  }
+  .kinh-nghiem {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 0;
+  }
+  .kinh-nghiem h1 {
+    align-self: flex-start;
+    padding-bottom: 40px;
+  }
+  .ngon-ngu {
+    order: 1;
+  }
+  .hoat-dong {
+    order: -1;
+  }
+  .aa {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .kn-nn {
+    padding-left: 0;
+  }
+  .so-thich2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  /* chung chi */
+  .container-2 img {
+    width: 100%;
+    padding-bottom: 20xp;
+  }
+  .chung-chi {
+    flex-wrap: wrap;
+  }
+  .job-info h3,
+  .chung-chi h3 {
+    font-size: smaller;
+  }
+  /* Du an */
+  .duoi-tieu-de .nam {
+    margin-top: 0;
+  }
+}
